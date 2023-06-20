@@ -3,6 +3,8 @@ import os
 import openai as ai
 from PyPDF2 import PdfReader
 
+ai.api_key = st.secrets["openai_key"]
+
 st.markdown("""
 # 📝 AI-Powered Cover Letter Generator
 
@@ -56,7 +58,6 @@ if submitted:
     #model="gpt-3.5-turbo-16k", 
     model = "gpt-3.5-turbo",
     temperature=ai_temp,
-    openai_api_key=st.secrets["openai_key"],
     messages = [
         {"role": "user", "content" : f"You will need to generate a cover letter based on specific resume and a job description"},
         {"role": "user", "content" : f"My resume text: {res_text}"},
