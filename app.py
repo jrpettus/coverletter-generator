@@ -22,7 +22,7 @@ res_format = st.radio(
 
 if res_format == 'Upload':
     # upload_resume
-        res_file = st.file_uploader('📁 Upload your resume')
+        res_file = st.file_uploader('📁 Upload your resume in pdf format')
         if res_file:
             pdf_reader = PdfReader(res_file)
 
