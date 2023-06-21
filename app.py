@@ -9,9 +9,9 @@ st.markdown("""
 # 📝 AI-Powered Cover Letter Generator
 
 Generate a cover letter. All you need to do is:
-1. Upload your resume or copy your resume/experiences)
+1. Upload your resume or copy your resume/experiences
 2. Paste a relevant job description
-3. Input some other relevant data specific to the job you are applying
+3. Input some other relevant user/job data
 """
 )
 
